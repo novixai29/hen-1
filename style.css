@@ -876,37 +876,44 @@ svg {
 }
 
 .father-block {
-  margin-bottom: 34px;
+  margin-bottom: 38px;
+  text-align: center;
 }
 
-.father-label {
-  display: block;
+.father-name {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
 
-  margin-bottom: -5px;
-
-  color: rgba(246, 238, 224, 0.52);
-
-  font-size: 0.64rem;
-}
-
-.father-block h2 {
   margin: 0;
 
   color: var(--ivory);
 
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 10vw, 3.8rem);
-  line-height: 1.15;
+  font-size: clamp(2rem, 7vw, 3.3rem);
+  font-weight: 700;
+  line-height: 1.35;
+
+  white-space: nowrap;
+}
+
+.father-title {
+  color: var(--copper-light);
+
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
 }
 
 .father-block p {
-  max-width: 320px;
+  max-width: 340px;
 
-  margin: 8px auto 0;
+  margin: 10px auto 0;
 
   color: var(--text-muted);
 
-  font-size: 0.75rem;
+  font-size: 0.74rem;
   line-height: 2;
 }
 
