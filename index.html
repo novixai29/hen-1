@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <meta name="theme-color" content="#101d2d">
+
+  <meta
+    name="description"
+    content="دعوة حفل حنة يوسف - ليلة الرشيد"
+  >
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ليلة الرشيد | حنة يوسف">
+  <meta
+    property="og:description"
+    content="يتشرف السيد أحمد محمود بدعوتكم لمشاركته فرحة حنة ابنه يوسف"
+  >
+
+  <title>ليلة الرشيد | حنة يوسف</title>
+
+  <!--
+    الخطوط ليست ضرورية لعمل الصفحة.
+    إذا تعذر تحميل Google Fonts ستعمل الدعوة بالخطوط البديلة.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================================================
+       شاشة الدخول - باب بغدادي
+  ========================================================== -->
+  <div class="baghdad-gate" id="baghdadGate" aria-hidden="false">
+
+    <div class="gate-glow"></div>
+
+    <div class="gate-door gate-door--right">
+      <div class="door-pattern"></div>
+      <div class="door-panels">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="gate-door gate-door--left">
+      <div class="door-pattern"></div>
+      <div class="door-panels">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="gate-center">
+
+      <div class="gate-small-title">
+        دعوة خاصة
+      </div>
+
+      <div class="gate-ornament">
+        <span></span>
+        <i></i>
+        <span></span>
+      </div>
+
+      <h1 class="gate-title">
+        ليلة
+        <strong>يوسف</strong>
+      </h1>
+
+      <p class="gate-subtitle">
+        حنة على الطريقة البغدادية
+      </p>
+
+      <button
+        class="gate-enter"
+        id="gateEnter"
+        type="button"
+        aria-label="فتح الدعوة"
+      >
+        <span>افتح الدعوة</span>
+
+        <svg
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path d="M7 12h10M13 8l4 4-4 4"/>
+        </svg>
+      </button>
+
+    </div>
+
+    <div class="gate-bottom-text">
+      ليلة تجمع الأحبة
+    </div>
+
+  </div>
+
+
+  <!-- =========================================================
+       الخلفية العامة
+  ========================================================== -->
+  <div class="ambient-layer" aria-hidden="true">
+
+    <div class="night-gradient"></div>
+
+    <div class="stars">
+      <span class="star star-1"></span>
+      <span class="star star-2"></span>
+      <span class="star star-3"></span>
+      <span class="star star-4"></span>
+      <span class="star star-5"></span>
+      <span class="star star-6"></span>
+      <span class="star star-7"></span>
+      <span class="star star-8"></span>
+    </div>
+
+    <div class="lantern lantern--one">
+      <div class="lantern-rope"></div>
+      <div class="lantern-cap"></div>
+      <div class="lantern-body">
+        <div class="lantern-light"></div>
+      </div>
+      <div class="lantern-tail"></div>
+    </div>
+
+    <div class="lantern lantern--two">
+      <div class="lantern-rope"></div>
+      <div class="lantern-cap"></div>
+      <div class="lantern-body">
+        <div class="lantern-light"></div>
+      </div>
+      <div class="lantern-tail"></div>
+    </div>
+
+  </div>
+
+
+  <!-- =========================================================
+       الصفحة
+  ========================================================== -->
+  <main class="site-shell" id="siteShell">
+
+
+    <!-- =======================================================
+         HERO
+    ======================================================== -->
+    <section class="hero section">
+
+      <div class="hero-architecture" aria-hidden="true">
+
+        <div class="arch arch--back"></div>
+        <div class="arch arch--front"></div>
+
+        <div class="mashrabiya mashrabiya--right"></div>
+        <div class="mashrabiya mashrabiya--left"></div>
+
+      </div>
+
+      <div class="hero-content">
+
+        <div
+          class="hero-eyebrow reveal"
+          data-reveal
+        >
+          <span></span>
+          <p>ليلة فرح تجمع الأحبة</p>
+          <span></span>
+        </div>
+
+        <p
+          class="invitation-intro reveal"
+          data-reveal
+        >
+          يتشرف
+        </p>
+
+        <div
+          class="father-block reveal"
+          data-reveal
+        >
+          <span class="father-label">
+            السيد
+          </span>
+
+          <h2 data-bind="fatherName">
+            أحمد محمود
+          </h2>
+
+          <p>
+            بدعوتكم لمشاركته فرحة حنة ابنه
+          </p>
+        </div>
+
+
+        <div
+          class="groom-name-wrap reveal"
+          data-reveal
+        >
+
+          <div class="name-decoration">
+            <span></span>
+            <i></i>
+            <span></span>
+          </div>
+
+          <h1
+            class="groom-name"
+            data-bind="groomName"
+          >
+            يوسف
+          </h1>
+
+          <div class="groom-caption">
+            ليلة الحنة
+          </div>
+
+        </div>
+
+
+        <p
+          class="hero-closing reveal"
+          data-reveal
+        >
+          حضوركم يزيد أفراحنا سروراً
+        </p>
+
+        <a
+          href="#event-details"
+          class="scroll-cue"
+          aria-label="انتقل إلى تفاصيل الدعوة"
+        >
+          <span>تفاصيل الليلة</span>
+
+          <div class="scroll-line">
+            <i></i>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="hero-bottom-fade"></div>
+
+    </section>
+
+
+    <!-- =======================================================
+         TRANSITION
+    ======================================================== -->
+    <section
+      class="baghdad-quote section"
+      aria-label="مقدمة الدعوة"
+    >
+
+      <div
+        class="quote-line reveal"
+        data-reveal
+      >
+        <span class="quote-mark">
+          “
+        </span>
+
+        <p>
+          من دارٍ يملؤها الفرح
+          <br>
+          إلى قلوب الأحبة
+        </p>
+
+        <span class="quote-mark quote-mark--end">
+          ”
+        </span>
+      </div>
+
+      <div
+        class="baghdad-divider reveal"
+        data-reveal
+      >
+        <span></span>
+        <i></i>
+        <b></b>
+        <i></i>
+        <span></span>
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         EVENT JOURNEY
+    ======================================================== -->
+    <section
+      class="event-journey section"
+      id="event-details"
+    >
+
+      <header
+        class="section-heading reveal"
+        data-reveal
+      >
+
+        <span class="section-kicker">
+          موعدنا
+        </span>
+
+        <h2>
+          تفاصيل ليلة الفرح
+        </h2>
+
+        <p>
+          ننتظركم لتكتمل بوجودكم فرحتنا
+        </p>
+
+      </header>
+
+
+      <div class="journey">
+
+        <div class="journey-line" aria-hidden="true">
+          <span></span>
+        </div>
+
+
+        <!-- DAY -->
+        <article
+          class="journey-stop journey-stop--right reveal"
+          data-reveal
+        >
+
+          <div class="journey-marker">
+            <span></span>
+          </div>
+
+          <div class="journey-content">
+
+            <span class="journey-number">
+              01
+            </span>
+
+            <span class="journey-label">
+              اليوم
+            </span>
+
+            <strong data-bind="dayName">
+              الجمعة
+            </strong>
+
+            <p>
+              ليلة ننتظرها بفرح
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- DATE -->
+        <article
+          class="journey-stop journey-stop--left reveal"
+          data-reveal
+        >
+
+          <div class="journey-marker">
+            <span></span>
+          </div>
+
+          <div class="journey-content">
+
+            <span class="journey-number">
+              02
+            </span>
+
+            <span class="journey-label">
+              التاريخ
+            </span>
+
+            <strong data-bind="dateText">
+              23 أكتوبر 2026
+            </strong>
+
+            <p>
+              احفظوا هذا الموعد
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- TIME -->
+        <article
+          class="journey-stop journey-stop--right reveal"
+          data-reveal
+        >
+
+          <div class="journey-marker">
+            <span></span>
+          </div>
+
+          <div class="journey-content">
+
+            <span class="journey-number">
+              03
+            </span>
+
+            <span class="journey-label">
+              الوقت
+            </span>
+
+            <strong data-bind="timeText">
+              7:30 مساءً
+            </strong>
+
+            <p>
+              نبدأ الفرح بحضوركم
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- LOCATION -->
+        <article
+          class="journey-stop journey-stop--left reveal"
+          data-reveal
+        >
+
+          <div class="journey-marker">
+            <span></span>
+          </div>
+
+          <div class="journey-content">
+
+            <span class="journey-number">
+              04
+            </span>
+
+            <span class="journey-label">
+              المكان
+            </span>
+
+            <strong data-bind="venue">
+              قاعة دجلة للمناسبات
+            </strong>
+
+            <p data-bind="city">
+              بغداد
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         COUNTDOWN
+    ======================================================== -->
+    <section class="countdown-section section">
+
+      <div class="countdown-frame">
+
+        <div class="frame-corner frame-corner--tr"></div>
+        <div class="frame-corner frame-corner--tl"></div>
+        <div class="frame-corner frame-corner--br"></div>
+        <div class="frame-corner frame-corner--bl"></div>
+
+        <header
+          class="countdown-heading reveal"
+          data-reveal
+        >
+
+          <span>
+            والموعد يقترب
+          </span>
+
+          <h2>
+            بقي على ليلة يوسف
+          </h2>
+
+        </header>
+
+
+        <div
+          class="countdown reveal"
+          id="countdown"
+          data-reveal
+          aria-live="polite"
+        >
+
+          <div class="countdown-unit">
+            <strong id="days">00</strong>
+            <span>يوم</span>
+          </div>
+
+          <div class="countdown-separator">
+            :
+          </div>
+
+          <div class="countdown-unit">
+            <strong id="hours">00</strong>
+            <span>ساعة</span>
+          </div>
+
+          <div class="countdown-separator">
+            :
+          </div>
+
+          <div class="countdown-unit">
+            <strong id="minutes">00</strong>
+            <span>دقيقة</span>
+          </div>
+
+          <div class="countdown-separator">
+            :
+          </div>
+
+          <div class="countdown-unit">
+            <strong id="seconds">00</strong>
+            <span>ثانية</span>
+          </div>
+
+        </div>
+
+
+        <p
+          class="event-started"
+          id="eventStarted"
+          hidden
+        >
+          حان موعد ليلة الفرح
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         LOCATION
+    ======================================================== -->
+    <section class="location-section section">
+
+      <div class="location-arch">
+
+        <div class="location-inner">
+
+          <span
+            class="location-kicker reveal"
+            data-reveal
+          >
+            وجهتكم في هذه الليلة
+          </span>
+
+          <h2
+            class="reveal"
+            data-reveal
+            data-bind="venue"
+          >
+            قاعة دجلة للمناسبات
+          </h2>
+
+          <p
+            class="location-city reveal"
+            data-reveal
+          >
+            <span data-bind="city">بغداد</span>
+          </p>
+
+
+          <div
+            class="location-address reveal"
+            data-reveal
+          >
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 21s7-5.2 7-12a7 7 0 1 0-14 0c0 6.8 7 12 7 12Z"
+              />
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+
+            <span data-bind="address">
+              بغداد - شارع الكرادة
+            </span>
+          </div>
+
+
+          <a
+            id="mapsButton"
+            class="primary-action maps-action reveal"
+            data-reveal
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <span>
+              افتح الموقع على الخريطة
+            </span>
+
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14M14 7l5 5-5 5"/>
+            </svg>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         DATE BANNER
+    ======================================================== -->
+    <section class="date-banner section">
+
+      <div
+        class="date-banner-content reveal"
+        data-reveal
+      >
+
+        <span class="date-banner-top">
+          ليلة واحدة
+        </span>
+
+        <strong data-bind="dayName">
+          الجمعة
+        </strong>
+
+        <div class="date-banner-date">
+          <span data-bind="dateDay">23</span>
+
+          <div>
+            <b data-bind="dateMonth">أكتوبر</b>
+            <small data-bind="dateYear">2026</small>
+          </div>
+        </div>
+
+        <p>
+          نلتقي على المحبة والفرح
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         ACTIONS
+    ======================================================== -->
+    <section class="actions-section section">
+
+      <header
+        class="section-heading reveal"
+        data-reveal
+      >
+        <span class="section-kicker">
+          احفظوا الموعد
+        </span>
+
+        <h2>
+          ليلة تستحق أن نتذكرها
+        </h2>
+      </header>
+
+
+      <div class="actions-list">
+
+        <button
+          type="button"
+          class="action-row reveal"
+          id="calendarButton"
+          data-reveal
+        >
+
+          <span class="action-icon">
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <rect x="3.5" y="5" width="17" height="15" rx="2"/>
+              <path d="M7 3v4M17 3v4M3.5 9h17"/>
+              <path d="M8 13h3M13 13h3M8 16h3"/>
+            </svg>
+          </span>
+
+          <span class="action-copy">
+            <strong>
+              أضف الموعد إلى التقويم
+            </strong>
+
+            <small>
+              حمل الموعد بصيغة Calendar
+            </small>
+          </span>
+
+          <span class="action-arrow">
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M15 5l-7 7 7 7"/>
+            </svg>
+          </span>
+
+        </button>
+
+
+        <button
+          type="button"
+          class="action-row reveal"
+          id="shareButton"
+          data-reveal
+        >
+
+          <span class="action-icon">
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <circle cx="18" cy="5" r="2.5"/>
+              <circle cx="6" cy="12" r="2.5"/>
+              <circle cx="18" cy="19" r="2.5"/>
+              <path d="M8.3 10.8l7.4-4.3M8.3 13.2l7.4 4.3"/>
+            </svg>
+          </span>
+
+          <span class="action-copy">
+            <strong>
+              شارك الدعوة
+            </strong>
+
+            <small>
+              أرسل ليلة الفرح إلى من تحب
+            </small>
+          </span>
+
+          <span class="action-arrow">
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M15 5l-7 7 7 7"/>
+            </svg>
+          </span>
+
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         CLOSING
+    ======================================================== -->
+    <section class="closing-section section">
+
+      <div class="closing-lantern" aria-hidden="true">
+        <div class="mini-rope"></div>
+
+        <div class="mini-lantern">
+          <span></span>
+        </div>
+      </div>
+
+
+      <div
+        class="closing-copy reveal"
+        data-reveal
+      >
+
+        <span class="closing-small">
+          على المحبة نلتقي
+        </span>
+
+        <h2>
+          بوجودكم
+          <br>
+          تكتمل ليلة الفرح
+        </h2>
+
+        <p>
+          أهلاً وسهلاً بكم
+        </p>
+
+      </div>
+
+
+      <div
+        class="closing-host reveal"
+        data-reveal
+      >
+        <span>
+          بدعوة من
+        </span>
+
+        <strong data-bind="fatherFull">
+          السيد أحمد محمود
+        </strong>
+      </div>
+
+    </section>
+
+
+    <footer class="site-footer">
+
+      <span class="footer-pattern"></span>
+
+      <p>
+        ليلة الحنة
+        <span>•</span>
+        <strong data-bind="groomName">يوسف</strong>
+      </p>
+
+    </footer>
+
+  </main>
+
+
+  <!-- =========================================================
+       Toast
+  ========================================================== -->
+  <div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+  >
+    <span id="toastText">
+      تم نسخ رابط الدعوة
+    </span>
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
